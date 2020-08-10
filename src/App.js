@@ -3,6 +3,7 @@ import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
 import ImageGrid from './comps/ImageGrid';
 import Modal from './comps/Modal';
+import Footer from './comps/Footer'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <UploadForm />
       <ImageGrid setSelectedImg={setSelectedImg} />
       {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+      <Footer />
     </div>
   );
 }
